@@ -57,7 +57,6 @@ def sum_of_pos_int_below(n):
         sqr = k * k
         total += sqr
     print(total)
-
 """
 
 
@@ -79,14 +78,15 @@ def sum_of_pos_int_below(n):
 # the sum of the squares of all the odd positive integers smaller than n.
 
 # Solution
+"""
 def sum_of_pos_odd_int_below(n):
     total = 0
     for k in range(1, n):
         if k % 2 == 1:
             sqr = k * k
+            total += sqr
         else:
-            pass
-        total += sqr
+            pass   
     return total
+"""
 
-print(sum_of_pos_odd_int_below(3))
