@@ -90,3 +90,16 @@ def sum_of_pos_odd_int_below(n):
     return total
 """
 
+
+# R 1.7
+
+# Give a single command that computes the sum from Exercise R-1.6, rely-
+# ing on Python’s comprehension syntax and the built-in sum function.
+
+# Solution
+"""
+def sum_of_pos_odd_int_below(n):
+    total = sum(k * k for k in range(1, n) if k % 2 == 1)
+    return total
+"""
+
